@@ -133,7 +133,7 @@ public class ResettableHttpServletRequest extends HttpServletRequestWrapper {
         }
 
         @Override
-        public void synchronized reset() throws IOException {
+        public synchronized void reset() throws IOException {
             inputStream.reset();
         }
 
